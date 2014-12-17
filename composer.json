@@ -1,6 +1,6 @@
 {
     "name": "eddywebs/db-to-api",
-    "description": "",
+    "description": "composer package for https://github.com/project-open-data/db-to-api",
     "authors": [
         {
             "name": "eddywebs",
