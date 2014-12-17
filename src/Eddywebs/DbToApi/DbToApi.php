@@ -2,7 +2,7 @@
 
 class DbToApi
 {
-	public static function getApi($param){
+	public static function getApi($param, $config){
 
 
 		include dirname( __FILE__ ) . '/includes/compatibility.php';
