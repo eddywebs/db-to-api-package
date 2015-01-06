@@ -5,14 +5,17 @@ Composer package for converting database to api (github.com/project-open-data/db
 
 USAGE
 -------------
-intialize the api variable in routes/controller as
+intialize the api variable in routes/controller as:
 
+<pre>
 $var = Eddywebs\DbToApi\DbToApi::getApi($param, $config);
-
+</pre>
 
 Where $param has the parameters for returning data, params little different from the paramater url in the readme file of original code at github.com/project-open-data/db-to-api.
 
 $config is array of configuration in following format:
+
+<pre>
 $config = array( 
              'name' => 'database-name',
              'username' => 'username',
@@ -23,6 +26,8 @@ $config = array(
              'table_blacklist' => array(),
              'column_blacklist' => array(),
  );
+
+</pre>
 
 Databases Supported
 -------------------
@@ -41,7 +46,6 @@ Databases Supported
 
 Param/url structure
 -------------------
-* All rows in table: db=dataset-name&table=datasets&format=json
-* A specific row in a table: db=dataset-name&table=datasets&value=ID&format=json
-
-
+* All rows in table: db={database-name}&table={table-name}&format=json
+* A specific row in a table using ID/primary key column of the table : db={database-name}&table={table-name}&value={ID/primary key value}&format=json
+*A specific row in table using the value in column:  /db={database-name}&table={table-name}&column={column-name}&value={search-value}&format=json
