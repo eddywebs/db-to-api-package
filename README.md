@@ -26,7 +26,6 @@ $config = array(
              'table_blacklist' => array(),
              'column_blacklist' => array(),
  );
-
 </pre>
 
 Databases Supported
